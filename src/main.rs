@@ -60,7 +60,6 @@ fn main() {
 
         let mut file = fs::File::create(&wallpaper_path).unwrap();
         file.write_all(&image_bytes).unwrap();
-        file.sync_all().unwrap();
     } else {
         #[cfg(target_os = "linux")]
         std::process::exit(1)
