@@ -5,8 +5,8 @@ edition = "2024"
 
 [dependencies]
 chrono = "0"
-ntex = { version = "4.0.0-beta.4", default-features = false, features = ["openssl", "ws"] }
-sonic-rs = "0"
+ntex = { version = "4.0.0-beta.5", default-features = false, features = ["openssl", "ws"] }
+sonic-rs = { git = "https://github.com/cloudwego/sonic-rs" }
 
 [target.'cfg(target_os = "macos")'.dependencies]
 cidre = { version = "0", default-features = false, features = ["app", "blocks", "ca", "macos_27_0"] }
