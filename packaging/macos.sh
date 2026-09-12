@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/bash
 set -euo pipefail
 [[ "$(uname -s)" == Darwin ]] || { echo "The macOS app bundle must be built on macOS." >&2; exit 1; }
 cd "$(dirname "${BASH_SOURCE[0]}")/.."
