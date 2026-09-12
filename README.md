@@ -28,7 +28,7 @@ The executable saves the image at `~/Pictures/today_bing.jpg` and only downloads
 Build the background app bundle with:
 
 ```sh
-./scripts/package-macos.sh
+./packaging/macos.sh
 ```
 
 Move `target/release/Wallpaper.app` to `/Applications`, open it once, then add it in **System Settings > General > Login Items**. The app is an agent app, so it does not open Terminal or show a Dock icon when launched at login.

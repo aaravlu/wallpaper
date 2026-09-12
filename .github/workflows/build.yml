@@ -52,7 +52,7 @@ jobs:
         if: runner.os == 'macOS'
         shell: bash
         run: |
-          ./scripts/package-macos.sh
+          ./packaging/macos.sh
           tar -czf target/release/wallpaper-macos.tar.gz \
             -C target/release Wallpaper.app
 
